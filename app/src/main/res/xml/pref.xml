@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Preferences (This element is optional)"/>
+
+    <PreferenceScreen android:key="account_settings"
+        android:title="This opens the activity"
+        android:summary="">
+        <intent android:action="com.example.cleonurb.basicsecondauth.OPEN_ACCOUNT"
+            android:targetPackage="com.example.cleonurb.basicsecondauth"
+            android:targetClass="com.example.cleonurb.basicsecondauth.PreferenceActivity"/>
+    </PreferenceScreen>
+
+    <CheckBoxPreference android:title="This does nothing"
+        android:key="isNot"
+        android:summary="Seriously, it does nothing"/>
+
+    <SwitchPreference android:title="This does nothing either"
+        android:key="isNot2"
+        android:summary="Stop clicking it!"/>
+
+</PreferenceScreen>
